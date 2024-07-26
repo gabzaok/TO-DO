@@ -8,12 +8,19 @@ window.addEventListener('load', function() {
         const year = today.getFullYear();
         const month = today.getMonth();
         const lastDay = new Date(year, month + 1, 0).getDate();
+        console.log(lastDay);
 
         for (let day = today.getDate(); day <= lastDay; day++) {
             const date = new Date(year, month, day);
             const dayOfWeek = daysOfWeek[date.getDay()];
             const isToday = day === today.getDate() ? ' today' : '';
-            dates.push(`<div class="day${isToday}" data-date="${date.toDateString()}">${dayOfWeek}${day}</div></div>`);
+            dates.push(`
+                <div class="day${isToday}" data-date="${date.toDateString()}">
+                    ${dayOfWeek}
+                    <br />
+                    ${day}
+                </div>
+            `);
         }
         return dates.join('');
     }
@@ -24,7 +31,6 @@ window.addEventListener('load', function() {
         slidesToScroll: 4,
         slidesToShow: 4,
         draggable: true,
-        dots: '.dots',
         arrows: {
             prev: '.glider-prev',
             next: '.glider-next'
@@ -61,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesToScroll: 4,
         slidesToShow: 4,
         draggable: true,
-        dots: '.dots',
         arrows: {
             prev: '.glider-prev',
             next: '.glider-next'

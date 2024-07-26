@@ -24,7 +24,10 @@ function getTodoHtml(todo, index) {
     <li class="todo">
       <label for="${index}">
         <input id="${index}" onclick="updateStatus(this)" type="checkbox" ${checked}>
-        <span class="${checked}" id="circle">${todo.name}</span>
+        <span class="${checked}" id="circle">
+           ${todo.name}
+          </span> 
+
       </label>
       <button class="delete-btn" data-index="${index}" onclick="remove(this)"><i class="fa fa-times"></i></button>
       </li>
