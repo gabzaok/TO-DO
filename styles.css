@@ -169,7 +169,6 @@ body {
     min-height: 200px;
     padding: 10px 30px;
     backdrop-filter: blur(15px);
-    margin-right: 40px;
     background: linear-gradient(to bottom right, #527f8abd, #50859259);
     border-radius: 20px;
     box-shadow: 0px 4px 10px 1px #0e0d0d96;
@@ -333,7 +332,7 @@ h5 {
     align-items: center;
     background: transparent;
     border-radius: 40px;
-    max-width: 600;
+    width: 465px;
     box-shadow: 0px 4px 10px 1px #0e0d0d96;
     padding: 15px;
 
@@ -378,7 +377,7 @@ h5 {
     transition: all 0.2s ease;
     box-shadow: 1px 3px 1px 1px #527f8a;
     font-weight: 400;
-   
+  
 
 }
 
@@ -400,7 +399,7 @@ h5 {
     width: fit-content;
     display: flex;
     align-items: center;
-    color:#527f8a
+    color:#527f8a;
 }
 
 .todo,
@@ -450,6 +449,7 @@ input:checked+#circle::before {
 .todos-container {
     height: 300px;
     overflow: overlay;
+    width: 100%;
 }
 
 .todos-container::-webkit-scrollbar-track {
@@ -479,7 +479,7 @@ input:checked+#circle::before {
    
 }
 
-.filter , .filter-inc {
+.filter , #filter-inc {
     display: flex;
     align-items: center;
     color: #fffefe;
@@ -491,8 +491,8 @@ input:checked+#circle::before {
     box-shadow: 0px 4px 10px 1px #0e0d0d96;
 }
 
-.filter-inc.active,
-.filter-inc:hover {
+#filter-inc.active,
+#filter-inc:hover {
     background-color: #ecc8b4cb;
     box-shadow: 0px 4px 10px 1px #0e0d0d96;
 }
@@ -515,12 +515,11 @@ input:checked+#circle::before {
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin: auto;
+    width: 25%;
+    margin: 20px  auto 10px auto;
     background: linear-gradient(to bottom right, #527f8a, #50859259);
     border-radius: 20px;
     box-shadow: 0px 4px 10px 1px #0e0d0d96;
-    margin-top: 10px;
 }
 
 .delete-all:hover {
