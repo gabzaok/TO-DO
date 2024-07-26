@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
@@ -22,22 +23,22 @@
     <div class="main">
 
         <div class="main-container">
-    
-    
+
+
             <div class="header">
                 <div class="header-title">
                     <h1>Olá,</h1>
                     <span>pronto para começar seu dia?</span>
-    
+
                 </div>
-    
+
                 <div class="header-img">
                     <img src="desk.png" alt="header">
                 </div>
             </div>
-    
-    
-    
+
+
+
             <div class="add-task-container">
                 <h2>Adicionar tarefa</h2>
                 <div class="task-input">
@@ -45,7 +46,7 @@
                     <button class="add-btn"><img src="add.svg"></button>
                 </div>
                 <div class="task-date">
-    
+
                     <input type="date">
                 </div>
                 <div class="task-time">
@@ -54,11 +55,11 @@
                 </div>
             </div>
         </div>
-    
-    
-    
-    
-    
+
+
+
+
+
         <div class="conteudo">
             <div class="calendar">
                 <div class="glider-contain">
@@ -70,27 +71,29 @@
                     <div role="tablist" class="dots"></div>
                 </div>
             </div>
-    
+
             <div class="container">
+                <h1 class="taf">Tarefas</h1>
+
+                <div class="filters">
+                    <div class="filter" data-filter="completed">Finalizados</div>
+                    <div class="filter-inc" data-filter="pending">Incompletos</div>
+                </div>
                 <div class="cont-task">
-                    <h1 class="taf">Tarefas</h1>
-    
-                    <div class="filters">
-                        <div class="filter" data-filter="completed">Finalizados</div>
-                        <div class="filter" data-filter="pending">Incompletos</div>
-                        <div class="delete-all">Remover tudo</div>
-                    </div>
-    
+
                     <div class="todos-container">
                         <ul class="todos"></ul>
                         <img class="empty-image" src="./empty.svg">
                     </div>
                 </div>
+                <div class="delete-all">Remover tudo</div>
             </div>
-    
+            
+           
+
             <script src="calendar.js"></script>
             <script src="script.js"></script>
-    
+
         </div>
     </div>
 </body>
